@@ -65,46 +65,51 @@
         }
     </style>
 </head>
-<body>
 
+
+
+<body>
     <nav>
         <div class="container nav-content">
             <a href="#" class="logo">statespace<span>.bio</span></a>
             <div class="nav-links">
                 <a href="#about">RESEARCH PLAN</a>
-                <a href="about.html">ABOUT</a>
+                <a href="about.html">ABOUT US</a>
             </div>
         </div>
     </nav>
 
+
+
     <header class="hero">
         <div class="container">
             <img src="logo.png" width="805" height="439" alt="statespace.bio logo" class="responsive">
-            <h1>Biological Navigation</h1>
-            <p>We build computational frameworks that learn the geometry and dynamics of biological state space to identify the minimal interventions required for moving the system from one state to another.</p>
-            <a href="#about" class="btn">Explore the Idea</a>
+            
+
+	    <h1>The Geometry of Biology</h1>
+            
+
+	    <p>We perform computational analyses that learn the geometry and dynamics of biological statespace. Looking at large data sets in this way is fundamentally different from looking at just rows, columns, and variables. Understanding the geometry of these structures can lead to new insights. We love open science and will share everything we learn with the public.</p>
+            
+
+	    <a href="#about" class="btn">Explore the Idea</a>
         </div>
     </header>
+
+
 
     <section id="about" class="core-idea">
         <div class="container">
             <h2 class="section-title">The <span class="accent-text">Geometric</span> Approach</h2>
-            <p style="max-width: 800px; margin: 0 auto;">Stable biological states correspond to attractors in a high-dimensional space. We rank candidate control variables by their geometric leverage on transitions between these attractors.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <h3>Geometry-First</h3>
-                    <p>Infers control variables from the geometry and dynamics of state space alone, without requiring pre-existing regulatory networks.</p>
-                </div>
-                <div class="card">
-                    <h3>Formal Minimality</h3>
-                    <p>Defines "minimal intervention" as the perturbation that maximally redirects trajectory direction per unit of feature change.</p>
-                </div>
-                <div class="card">
-                    <h3>Calibrated Claims</h3>
-                    <p>Explicitly distinguishes between geometric candidates and causal drivers, acting as a high-precision hypothesis generation engine.</p>
-                </div>
-            </div>
+            <p style="max-width: 800px; margin: 0 auto;">
+Much of modern biology is organized around measurements. We collect observations, arrange them into tables, and search for variables that differ between conditions. This approach has been enormously successful, but it can sometimes obscure a deeper question: what if biological systems are better understood not as collections of measurements, but as states occupying positions within a high-dimensional space?
+</p><br>
+<p style="max-width: 800px; margin: 0 auto;">
+Our projects explore a state-space perspective on biology. In this view, cells, organisms, ecosystems, and other complex systems are represented as points in a landscape defined by many interacting variables. The primary questions become geometric and dynamical rather than purely statistical. What is the shape of the space? Are there distinct regions, continuous gradients, or stable attractors? How do systems move through the landscape over time? What perturbations cause transitions between states, and what changes are required to guide a system from one region to another?
+</p><br>
+<p style="max-width: 800px; margin: 0 auto;">
+The goal is not simply to classify or predict, but to understand structure, dynamics, and control. By focusing first on the geometry of biological state spaces and only later on labels and categories, this approach seeks to uncover organizing principles that may be shared across many domains of biology. Ultimately, it is an attempt to develop a more intuitive and unified way of thinking about complex living systems.
+</p>
         </div>
     </section>
 
@@ -113,10 +118,11 @@
             <h2 class="section-title">Long-Term Vision</h2>
             <p style="max-width: 730px; margin: 0 auto 30px;">If biological states are navigable, then cellular and organismal states are theoretically redirectable toward desirable states. Our core mission is to determine if this is possible and if so, solve for the minimal set of variables needed to move a cell or organism from state A to state B.</p>
             <p style="max-width: 730px; margin: 0 auto 30px;"><strong>Proof of Concept</strong>
-            <p style="max-width: 730px; margin: 0 auto 30px;">The first study underway is the State Navigator project. We are currently using high quality single-cell transcriptomic data sets from Pancreatic Endocrinogenesis & Dentate Gyrus Neurogenesis to establish proof of concept. This project works in continuous gene expression space where cells move along trajectories between attractor states, and we are asking: what are the minimal perturbations that redirect those trajectories? <br>
-            <p style="max-width: 730px; margin: 0 auto 30px;">The second study underway is the anti-microbial resistance project (AMR). The AMR project works in a discrete/mixed genomic feature space where bacterial lineages occupy positions defined by their gene content, SNPs, and mobile elements. Resistant and susceptible phenotypes are stable phenotypic attractors in this genomic landscape. We'll use genetic programming to learn the geometric boundaries between resistance basins. The interpretable rules it produces will be compact descriptions of the minimal genomic features that define those boundaries.<br>
+            
+            <p style="max-width: 730px; margin: 0 auto 30px;">This area in under construction. Come back soon to learn about our upcoming proof of concept studies.<br>
+
             <p style="max-width: 730px; margin: 0 auto 30px;"><strong>Other open source projects</strong>
-            <p style="max-width: 730px; margin: 0 auto 30px;"><a href="https://github.com/thomascnelson/TDRE">Transcriptomic-Based Drug Repurposing Pipeline</a> - A command-line pipeline for identifying drug repurposing candidates from public RNA-seq data. Starting from a GEO accession number and a disease name, the pipeline downloads expression data, identifies differentially expressed genes, builds a disease transcriptomic signature, and queries the LINCS L1000 database for drugs that reverse that signature.
+            <p style="max-width: 730px; margin: 0 auto 30px;"><a href="https://github.com/thomas-c-nelson/TDRE">Transcriptomic-Based Drug Repurposing Pipeline</a> - A command-line pipeline for identifying drug repurposing candidates from public RNA-seq data. Starting from a GEO accession number and a disease name, the pipeline downloads expression data, identifies differentially expressed genes, builds a disease transcriptomic signature, and queries the LINCS L1000 database for drugs that reverse that signature.
         </div>
     </section>
 
